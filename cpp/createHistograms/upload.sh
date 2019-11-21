@@ -39,13 +39,3 @@ ssh ckuruppu@novagpvm15.fnal.gov "cd /nova/app/users/ckuruppu/workingThesis/cpp/
                                   "
 
 rm upload.tar.gz
-
-
-
-#tar -zcf upload.tar --exclude='.*' makeHistograms.cxx makeHistograms.h headers.h structs.h makeHistograms.h createHistograms.cxx
-# scp ./upload.tar ckuruppu@novagpvm15.fnal.gov:/nova/app/users/ckuruppu/workingThesis/cpp/createHistograms/
-# ssh ckuruppu@novagpvm15.fnal.gov "cd /nova/app/users/ckuruppu/workingThesis/cpp/createHistograms/ &&
-#                                   rm makeHistograms.cxx makeHistograms.h headers.h structs.h makeHistograms.h createHistograms.cxx &&
-#                                   echo 'Old files were cleaned..!' &&
-#                                   tar xopf upload.tar
-#                                   "
