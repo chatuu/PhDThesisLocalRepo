@@ -6,12 +6,12 @@
 class makeHistograms
 {
 private:
-    TFile *f1 = nullptr;
-    unsigned int histNum = 0;
-    TKey *key = nullptr;
-    TKey *subkey = nullptr;
-    TDirectory *dir = nullptr;
-    TDirectory *newDir = nullptr;
+    TFile *f1 = nullptr; ///< This pointer to handles input ROOT file.
+    unsigned int histNum = 0; ///< histNum is used to store histogram Number.
+    TKey *key = nullptr; ///< This key pointer is used to extract historgram information.
+    TKey *subkey = nullptr; ///< This subkey pointer is used to extract historgram information.
+    TDirectory *dir = nullptr; ///< This dir pointer is used to access folders in ROOT file and extract historgram information.
+    TDirectory *newDir = nullptr; ///< Currently not in use.
     histogramInfo histInfo;
     std::vector<histogram> hist;
     std::vector<histogram> selectedHists;
@@ -34,7 +34,8 @@ public:
                      std::vector<histDetails> lColorAndLeg,
                      std::string title,
                      std::string axis,
-                     std::string saveAs);
+                     std::string saveAs,
+                     bool isLog);
 };
 
 #endif //MAKEHISTOGRAMS_H

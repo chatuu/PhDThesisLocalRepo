@@ -1,10 +1,44 @@
+/**
+ * @file createHistograms.cxx
+ * 
+ * @author Chatura Kuruppu (ckuruppu@fnal.gov)
+ * 
+ * @brief This program is made to generate histograms from the .root file created by CAFANA script: saveHisotgrams
+ * 
+ * @version 0.1
+ * 
+ * @date 2019-12-03
+ * 
+ * @copyright GNU Public License
+ * 
+ * @mainpage Histogram Generator
+ * 
+ * @section intro_sec Introduction
+ * 
+ * This code was developped to generate Histograms from the .root file created by saveHistograms script.
+ * 
+ * @section compile_sec Compilation
+ * 
+ * Here I would describe how to compile this code.
+ * 
+ * @subsection Step1
+ * 
+ * Run make.sh
+ */
+
 #include "headers.h"
 #include "structs.h"
 #include "makeHistograms.h"
 
+/**
+ * @brief This is the main function.
+ *  
+ * @param argv This contains the ROOT file name and it's path.
+ * 
+ */
 int main(int argc, char **argv)
 {
-    std::vector<unsigned int> SighistNums = {15, 6, 7, 8, 9};
+    std::vector<unsigned int> SighistNums = {15, 6, 7, 8, 9}; 
     std::vector<histDetails> lSignal;
     lSignal.push_back({1, "Signal with No Cuts"});
     lSignal.push_back({4, "Signal with DQ Cuts"});

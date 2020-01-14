@@ -1,0 +1,312 @@
+\hypertarget{classmake_histograms}{}\doxysection{make\+Histograms Class Reference}
+\label{classmake_histograms}\index{makeHistograms@{makeHistograms}}
+
+
+{\ttfamily \#include $<$make\+Histograms.\+h$>$}
+
+
+
+Collaboration diagram for make\+Histograms\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classmake_histograms__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmake_histograms_a2704ce6c6f8554c8240300a5cb4bf5b9}{make\+Histograms}} ()
+\item 
+\mbox{\hyperlink{classmake_histograms_a9016fa778edbf890fe3545c84106db16}{$\sim$make\+Histograms}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$ \mbox{\hyperlink{classmake_histograms_a624f07716bceee9575573b1b1a0d1f22}{Get\+Hists}} (std\+::vector$<$ unsigned int $>$ hist\+Nums)
+\item 
+void \mbox{\hyperlink{classmake_histograms_af5d833d2cbaf75bd9281267ff51d709f}{Set\+Root\+File}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{classmake_histograms_a5bced7c79a9d994eda0267809844d64a}{Print\+Histograms}} ()
+\item 
+void \mbox{\hyperlink{classmake_histograms_abd43082aae4da61b6821181c7c85485e}{Print\+Nevents}} ()
+\item 
+void \mbox{\hyperlink{classmake_histograms_aa92bc8087d9568359a78b593ca1a26c6}{create\+Cut\+Table\+File}} (std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{classmake_histograms_acbb0caf0f5e232c2c9bc8ac829fe73ea}{draw\+Histograms}} (\mbox{\hyperlink{structhistogram_info}{histogram\+Info}} \mbox{\hyperlink{classmake_histograms_a5cf061969e1b94da177d2e1177db2c10}{hist\+Info}})
+\item 
+void \mbox{\hyperlink{classmake_histograms_aa2ced78adc03a980c5448668d13c0e2a}{make\+Efficiency\+Curve}} (std\+::vector$<$ unsigned int $>$ signal\+Hists, std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$ histinfo, std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{classmake_histograms_aae222d288458ed1805898c66d4943dd2}{make\+Purity\+Curve}} (std\+::vector$<$ unsigned int $>$ signal\+Hists, std\+::vector$<$ unsigned int $>$ background\+Hist, std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$ histinfo, std\+::string file\+Name)
+\item 
+void \mbox{\hyperlink{classmake_histograms_a86ebc8dea48779350ec078ad48470d44}{Set\+Hist\+Info}} (std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$ hists, std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$ l\+Color\+And\+Leg, std\+::string title, std\+::string axis, std\+::string save\+As)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\+File $\ast$ \mbox{\hyperlink{classmake_histograms_aff62ddbb73f77d62607b1b4abfbc810b}{f1}} = nullptr
+\begin{DoxyCompactList}\small\item\em This pointer to handles input R\+O\+OT file. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classmake_histograms_aa846badb9a938c350610b7a553d911c8}{hist\+Num}} = 0
+\begin{DoxyCompactList}\small\item\em hist\+Num is used to store histogram Number. \end{DoxyCompactList}\item 
+T\+Key $\ast$ \mbox{\hyperlink{classmake_histograms_a56063043c4ee7395f146b9153da0eab8}{key}} = nullptr
+\begin{DoxyCompactList}\small\item\em This key pointer is used to extract historgram information. \end{DoxyCompactList}\item 
+T\+Key $\ast$ \mbox{\hyperlink{classmake_histograms_a6ed16abe8df97e6cff95cf38576a3f1b}{subkey}} = nullptr
+\begin{DoxyCompactList}\small\item\em This subkey pointer is used to extract historgram information. \end{DoxyCompactList}\item 
+T\+Directory $\ast$ \mbox{\hyperlink{classmake_histograms_abc711d025754c2c7f02d2167bff2878e}{dir}} = nullptr
+\begin{DoxyCompactList}\small\item\em This dir pointer is used to access folders in R\+O\+OT file and extract historgram information. \end{DoxyCompactList}\item 
+T\+Directory $\ast$ \mbox{\hyperlink{classmake_histograms_a6da08f6a71ca47db7769e0be1032e2cc}{new\+Dir}} = nullptr
+\begin{DoxyCompactList}\small\item\em Currently not in use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structhistogram_info}{histogram\+Info}} \mbox{\hyperlink{classmake_histograms_a5cf061969e1b94da177d2e1177db2c10}{hist\+Info}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$ \mbox{\hyperlink{classmake_histograms_aac28b6a6b8c3396b05c2c45bf6dfe9f3}{hist}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$ \mbox{\hyperlink{classmake_histograms_a43a67b0b82fb164b22b532ba2aeeb807}{selected\+Hists}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structcut_table}{cut\+Table}} $>$ \mbox{\hyperlink{classmake_histograms_a1f32a6e341907c7117e6318dcb8bd61c}{event\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmake_histograms_a2704ce6c6f8554c8240300a5cb4bf5b9}\label{classmake_histograms_a2704ce6c6f8554c8240300a5cb4bf5b9}} 
+\index{makeHistograms@{makeHistograms}!makeHistograms@{makeHistograms}}
+\index{makeHistograms@{makeHistograms}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{makeHistograms()}{makeHistograms()}}
+{\footnotesize\ttfamily make\+Histograms\+::make\+Histograms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmake_histograms_a9016fa778edbf890fe3545c84106db16}\label{classmake_histograms_a9016fa778edbf890fe3545c84106db16}} 
+\index{makeHistograms@{makeHistograms}!````~makeHistograms@{$\sim$makeHistograms}}
+\index{````~makeHistograms@{$\sim$makeHistograms}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{$\sim$makeHistograms()}{~makeHistograms()}}
+{\footnotesize\ttfamily make\+Histograms\+::$\sim$make\+Histograms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmake_histograms_aa92bc8087d9568359a78b593ca1a26c6}\label{classmake_histograms_aa92bc8087d9568359a78b593ca1a26c6}} 
+\index{makeHistograms@{makeHistograms}!createCutTableFile@{createCutTableFile}}
+\index{createCutTableFile@{createCutTableFile}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{createCutTableFile()}{createCutTableFile()}}
+{\footnotesize\ttfamily void make\+Histograms\+::create\+Cut\+Table\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name = {\ttfamily \char`\"{}defaultCutTable.txt\char`\"{}} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classmake_histograms_aa92bc8087d9568359a78b593ca1a26c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_acbb0caf0f5e232c2c9bc8ac829fe73ea}\label{classmake_histograms_acbb0caf0f5e232c2c9bc8ac829fe73ea}} 
+\index{makeHistograms@{makeHistograms}!drawHistograms@{drawHistograms}}
+\index{drawHistograms@{drawHistograms}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{drawHistograms()}{drawHistograms()}}
+{\footnotesize\ttfamily void make\+Histograms\+::draw\+Histograms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structhistogram_info}{histogram\+Info}}}]{hist\+Info }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmake_histograms_acbb0caf0f5e232c2c9bc8ac829fe73ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_a624f07716bceee9575573b1b1a0d1f22}\label{classmake_histograms_a624f07716bceee9575573b1b1a0d1f22}} 
+\index{makeHistograms@{makeHistograms}!GetHists@{GetHists}}
+\index{GetHists@{GetHists}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{GetHists()}{GetHists()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$ make\+Histograms\+::\+Get\+Hists (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$}]{hist\+Nums }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmake_histograms_a624f07716bceee9575573b1b1a0d1f22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_aa2ced78adc03a980c5448668d13c0e2a}\label{classmake_histograms_aa2ced78adc03a980c5448668d13c0e2a}} 
+\index{makeHistograms@{makeHistograms}!makeEfficiencyCurve@{makeEfficiencyCurve}}
+\index{makeEfficiencyCurve@{makeEfficiencyCurve}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{makeEfficiencyCurve()}{makeEfficiencyCurve()}}
+{\footnotesize\ttfamily void make\+Histograms\+::make\+Efficiency\+Curve (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$}]{signal\+Hists,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$}]{histinfo,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmake_histograms_aa2ced78adc03a980c5448668d13c0e2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classmake_histograms_aa2ced78adc03a980c5448668d13c0e2a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_aae222d288458ed1805898c66d4943dd2}\label{classmake_histograms_aae222d288458ed1805898c66d4943dd2}} 
+\index{makeHistograms@{makeHistograms}!makePurityCurve@{makePurityCurve}}
+\index{makePurityCurve@{makePurityCurve}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{makePurityCurve()}{makePurityCurve()}}
+{\footnotesize\ttfamily void make\+Histograms\+::make\+Purity\+Curve (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned int $>$}]{signal\+Hists,  }\item[{std\+::vector$<$ unsigned int $>$}]{background\+Hist,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$}]{histinfo,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmake_histograms_aae222d288458ed1805898c66d4943dd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classmake_histograms_aae222d288458ed1805898c66d4943dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_a5bced7c79a9d994eda0267809844d64a}\label{classmake_histograms_a5bced7c79a9d994eda0267809844d64a}} 
+\index{makeHistograms@{makeHistograms}!PrintHistograms@{PrintHistograms}}
+\index{PrintHistograms@{PrintHistograms}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{PrintHistograms()}{PrintHistograms()}}
+{\footnotesize\ttfamily void make\+Histograms\+::\+Print\+Histograms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classmake_histograms_a5bced7c79a9d994eda0267809844d64a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_abd43082aae4da61b6821181c7c85485e}\label{classmake_histograms_abd43082aae4da61b6821181c7c85485e}} 
+\index{makeHistograms@{makeHistograms}!PrintNevents@{PrintNevents}}
+\index{PrintNevents@{PrintNevents}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{PrintNevents()}{PrintNevents()}}
+{\footnotesize\ttfamily void make\+Histograms\+::\+Print\+Nevents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classmake_histograms_abd43082aae4da61b6821181c7c85485e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_a86ebc8dea48779350ec078ad48470d44}\label{classmake_histograms_a86ebc8dea48779350ec078ad48470d44}} 
+\index{makeHistograms@{makeHistograms}!SetHistInfo@{SetHistInfo}}
+\index{SetHistInfo@{SetHistInfo}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{SetHistInfo()}{SetHistInfo()}}
+{\footnotesize\ttfamily void make\+Histograms\+::\+Set\+Hist\+Info (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structhistogram}{histogram}} $>$}]{hists,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structhist_details}{hist\+Details}} $>$}]{l\+Color\+And\+Leg,  }\item[{std\+::string}]{title,  }\item[{std\+::string}]{axis,  }\item[{std\+::string}]{save\+As }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmake_histograms_a86ebc8dea48779350ec078ad48470d44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classmake_histograms_a86ebc8dea48779350ec078ad48470d44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmake_histograms_af5d833d2cbaf75bd9281267ff51d709f}\label{classmake_histograms_af5d833d2cbaf75bd9281267ff51d709f}} 
+\index{makeHistograms@{makeHistograms}!SetRootFile@{SetRootFile}}
+\index{SetRootFile@{SetRootFile}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{SetRootFile()}{SetRootFile()}}
+{\footnotesize\ttfamily void make\+Histograms\+::\+Set\+Root\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name = {\ttfamily \char`\"{}../rootFiles/Cleaned\+\_\+20191028\+\_\+backup.root\char`\"{}} }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classmake_histograms_af5d833d2cbaf75bd9281267ff51d709f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmake_histograms_abc711d025754c2c7f02d2167bff2878e}\label{classmake_histograms_abc711d025754c2c7f02d2167bff2878e}} 
+\index{makeHistograms@{makeHistograms}!dir@{dir}}
+\index{dir@{dir}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily T\+Directory$\ast$ make\+Histograms\+::dir = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This dir pointer is used to access folders in R\+O\+OT file and extract historgram information. 
+
+\mbox{\Hypertarget{classmake_histograms_a1f32a6e341907c7117e6318dcb8bd61c}\label{classmake_histograms_a1f32a6e341907c7117e6318dcb8bd61c}} 
+\index{makeHistograms@{makeHistograms}!eventTable@{eventTable}}
+\index{eventTable@{eventTable}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{eventTable}{eventTable}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structcut_table}{cut\+Table}}$>$ make\+Histograms\+::event\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmake_histograms_aff62ddbb73f77d62607b1b4abfbc810b}\label{classmake_histograms_aff62ddbb73f77d62607b1b4abfbc810b}} 
+\index{makeHistograms@{makeHistograms}!f1@{f1}}
+\index{f1@{f1}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{f1}{f1}}
+{\footnotesize\ttfamily T\+File$\ast$ make\+Histograms\+::f1 = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This pointer to handles input R\+O\+OT file. 
+
+\mbox{\Hypertarget{classmake_histograms_aac28b6a6b8c3396b05c2c45bf6dfe9f3}\label{classmake_histograms_aac28b6a6b8c3396b05c2c45bf6dfe9f3}} 
+\index{makeHistograms@{makeHistograms}!hist@{hist}}
+\index{hist@{hist}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{hist}{hist}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structhistogram}{histogram}}$>$ make\+Histograms\+::hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmake_histograms_a5cf061969e1b94da177d2e1177db2c10}\label{classmake_histograms_a5cf061969e1b94da177d2e1177db2c10}} 
+\index{makeHistograms@{makeHistograms}!histInfo@{histInfo}}
+\index{histInfo@{histInfo}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{histInfo}{histInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structhistogram_info}{histogram\+Info}} make\+Histograms\+::hist\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmake_histograms_aa846badb9a938c350610b7a553d911c8}\label{classmake_histograms_aa846badb9a938c350610b7a553d911c8}} 
+\index{makeHistograms@{makeHistograms}!histNum@{histNum}}
+\index{histNum@{histNum}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{histNum}{histNum}}
+{\footnotesize\ttfamily unsigned int make\+Histograms\+::hist\+Num = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+hist\+Num is used to store histogram Number. 
+
+\mbox{\Hypertarget{classmake_histograms_a56063043c4ee7395f146b9153da0eab8}\label{classmake_histograms_a56063043c4ee7395f146b9153da0eab8}} 
+\index{makeHistograms@{makeHistograms}!key@{key}}
+\index{key@{key}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily T\+Key$\ast$ make\+Histograms\+::key = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This key pointer is used to extract historgram information. 
+
+\mbox{\Hypertarget{classmake_histograms_a6da08f6a71ca47db7769e0be1032e2cc}\label{classmake_histograms_a6da08f6a71ca47db7769e0be1032e2cc}} 
+\index{makeHistograms@{makeHistograms}!newDir@{newDir}}
+\index{newDir@{newDir}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{newDir}{newDir}}
+{\footnotesize\ttfamily T\+Directory$\ast$ make\+Histograms\+::new\+Dir = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Currently not in use. 
+
+\mbox{\Hypertarget{classmake_histograms_a43a67b0b82fb164b22b532ba2aeeb807}\label{classmake_histograms_a43a67b0b82fb164b22b532ba2aeeb807}} 
+\index{makeHistograms@{makeHistograms}!selectedHists@{selectedHists}}
+\index{selectedHists@{selectedHists}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{selectedHists}{selectedHists}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structhistogram}{histogram}}$>$ make\+Histograms\+::selected\+Hists\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmake_histograms_a6ed16abe8df97e6cff95cf38576a3f1b}\label{classmake_histograms_a6ed16abe8df97e6cff95cf38576a3f1b}} 
+\index{makeHistograms@{makeHistograms}!subkey@{subkey}}
+\index{subkey@{subkey}!makeHistograms@{makeHistograms}}
+\doxysubsubsection{\texorpdfstring{subkey}{subkey}}
+{\footnotesize\ttfamily T\+Key$\ast$ make\+Histograms\+::subkey = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This subkey pointer is used to extract historgram information. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{make_histograms_8h}{make\+Histograms.\+h}}\item 
+\mbox{\hyperlink{make_histograms_8cxx}{make\+Histograms.\+cxx}}\end{DoxyCompactItemize}

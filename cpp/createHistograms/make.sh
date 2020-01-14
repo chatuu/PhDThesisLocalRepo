@@ -10,4 +10,5 @@
 
 #cd /nova/app/users/ckuruppu/workingThesis/cpp/createHistograms/
 
-g++ `root-config --cflags --glibs` -g createHistograms.cxx makeHistograms.cxx -o createHistograms
+#g++ `root-config --cflags --glibs` -g createHistograms.cxx makeHistograms.cxx -o createHistograms
+g++ `root-config --cflags --glibs` -g TrksProngsAndVtxActivity.cxx makeHistograms.cxx -o TrksProngsAndVtxActivity

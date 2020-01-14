@@ -1,0 +1,4 @@
+<map id="makeHistograms" name="makeHistograms">
+<area shape="rect" id="node1" title=" " alt="" coords="5,92,127,117"/>
+<area shape="rect" id="node2" href="$structhistogram_info.html" title="histogramInfo is used to store array of histograms, array of their line color and legend names,..." alt="" coords="15,5,117,31"/>
+</map>

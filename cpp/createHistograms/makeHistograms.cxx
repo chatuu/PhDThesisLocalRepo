@@ -101,6 +101,8 @@ void makeHistograms::drawHistograms(histogramInfo histInfo)
 {
     int numPlots = histInfo.hist.size();
     auto c = new TCanvas("c", "title", 1024, 768);
+    if(histInfo.isLog == true)
+        c->SetLogy();
     auto l = new TLegend(0.6, 0.7 - 0.04 * numPlots, 0.9, 0.9);
     THStack hs("hs", histInfo.title.c_str());
     TH1D *h[histInfo.hist.size()];
@@ -216,13 +218,15 @@ void makeHistograms::SetHistInfo(std::vector<histogram> hists,
                                  std::vector<histDetails> lColorAndLeg,
                                  std::string title,
                                  std::string axis,
-                                 std::string saveAs)
+                                 std::string saveAs,
+                                 bool isLog)
 {
     histInfo.hist = hists;
     histInfo.lColorAndLeg = lColorAndLeg;
     histInfo.title = title;
     histInfo.axis = axis;
     histInfo.saveAs = saveAs;
+    histInfo.isLog = isLog;
 
     drawHistograms(histInfo);
 }
