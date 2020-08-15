@@ -77,7 +77,7 @@ int main(int argc, char **argv)
                                 "Number of Tracks from Coherent Signal Vs Background",
                                 "Number of Tracks",
                                 "./plots/SigVsBacknTrks.png",
-                                true);
+                                false);
 
     // Prong CVN part:
 
@@ -120,7 +120,7 @@ int main(int argc, char **argv)
                                 "Number of Prongs from Coherent Signal Vs Background",
                                 "Number of Prongs",
                                 "./plots/SigVsBacknPrngs.png",
-                                true);
+                                false);
 
     // Vertex Activity part:
 
@@ -163,7 +163,7 @@ int main(int argc, char **argv)
                                 "Vtx activity of Coherent Signal Vs Background",
                                 "VTX Energy (GeV)",
                                 "./plots/SigVsBacknVtxActs.png",
-                                true);
+                                false);
 
     return 0;
 }
